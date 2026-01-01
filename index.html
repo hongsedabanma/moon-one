@@ -1,42 +1,225 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>李城泉</title>
-    <style>  
+    <title>李城泉 - 石材雕塑 · 园林景观</title>
+    <meta
+      name="description"
+      content="李城泉，专业从事石材雕塑和园林景观设计施工。联系：13931692826"
+    />
+    <style>
+      :root {
+        --accent: #8b6b4a;
+        --muted: #f5f4f2;
+        --text: #222;
+        --maxw: 1100px;
+      }
+      * {
+        box-sizing: border-box;
+      }
       body {
         margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial;
+        color: var(--text);
+        background: var(--muted);
+      }
+      header {
+        background: linear-gradient(180deg, #efe8e1 0%, #ffffff 100%);
+        padding: 28px 16px;
+      }
+      .container {
+        max-width: var(--maxw);
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      .avatar {
+        width: 84px;
+        height: 84px;
+        border-radius: 8px;
+        flex: 0 0 84px;
+        background: linear-gradient(135deg, #ddd, #bbb);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: 600;
+      }
+      h1 {
+        margin: 0;
+        font-size: 20px;
+      }
+      p.lead {
+        margin: 4px 0 0;
+        color: #444;
+      }
+
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 22px 0;
+      }
+      .hero .cta {
+        background: var(--accent);
+        color: #fff;
+        padding: 10px 14px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      main {
+        padding: 22px 0;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 340px;
+        gap: 20px;
+      }
+      .card {
+        background: #fff;
+        padding: 16px;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+      }
+
+      .services {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .svc {
+        flex: 1 1 140px;
+        padding: 12px;
+        border-radius: 6px;
+        background: linear-gradient(180deg, #fff, #faf7f5);
+        text-align: center;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+      }
+      .thumb {
+        height: 100px;
+        border-radius: 6px;
+        overflow: hidden;
+        background: #eee;
+      }
+      .thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      footer {
+        padding: 20px 0;
+        text-align: center;
+        color: #666;
+        font-size: 13px;
+      }
+
+      @media (max-width: 900px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .gallery {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .hero {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 12px;
+        }
       }
     </style>
   </head>
   <body>
-    <div style="
-      background-color: #f1f1f1;
-      text-align: center;
-      padding: 40px;
-   ">
-      <img src="http://photocq.photo.store.qq.com/psc?/3eb1fd0a-e8c5-43b8-a5da-117dff3d48bc/VhsVQ.Rst3k3bI1cmb4rUsoF7TvLhBuSRNkqHUaWNj4uqdpIKEO8Ac9yFlvFVMSHJIRt4az5Vd7kRlQLOHh4Hp5YEysCldNxZlEb*WUouxs!/b&bo=hwG*AQAAAAABBBs!&rf=viewer_4"alt="李城泉"width="80px"head="80">
-    </div >
-    <div style="
-    max-width: 700px;
-    margin: 30px auto;
-    padding: 15px;
-    line-height: 1.7;
-    ">
-        <p>我的网站</p>
-        <p>我的网站</p>
-        <p>我的网站</p>
-    </div>
-    <div style="
-      background-color: #f1f1f1;
-      text-align: center;
-      padding: 40px;
-      font-size: 12px;
-    ">
-      <p>我的网站</p>
-      <a href="https://user.qzone.qq.com/215130856?ADUIN=215130856&ADSESSION=1766981135&ADTAG=CLIENT.QQ.6073_MyInfo_PersonalInfo.0&ADPUBNO=27460&source=namecardstar">友情链接</a>
-    </div>
+    <header>
+      <div class="container">
+        <div class="brand">
+          <div class="avatar">李</div>
+          <div>
+            <h1>李城泉</h1>
+            <p class="lead">专业：石材雕塑 · 园林景观设计与施工</p>
+          </div>
+          <div style="margin-left: auto; text-align: right">
+            <a class="cta" href="tel:13931692826">电话：13931692826</a>
+            <div style="font-size: 12px; color: #666; margin-top: 6px">
+              微信/电话同号
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container grid">
+        <section>
+          <div class="card">
+            <h2 style="margin-top: 0">关于我</h2>
+            <p>
+              我叫李城泉，从事石材雕塑与园林景观行业多年，承接石材雕塑、园林小品、庭院设计与施工等工程，提供设计到落地的完整服务。
+            </p>
+            <h3>服务范围</h3>
+            <div class="services">
+              <div class="svc">石材雕塑定制</div>
+              <div class="svc">园林景观设计</div>
+              <div class="svc">庭院施工与养护</div>
+            </div>
+          </div>
+
+            <p style="font-size: 13px; color: #666; margin-top: 10px"></p>
+          </div>
+        </section>
+
+        <aside>
+          <div class="card">
+            <h3 style="margin-top: 0">联系方式</h3>
+            <p style="font-size: 18px; font-weight: 600; margin: 6px 0">
+              13931692826
+            </p>
+            <p style="margin: 6px 0">地址：河北曲阳雕塑产业园</p>
   
+            <div style="margin-top: 10px; font-size: 13px; color: #666">
+              工作时间：周一至周六 08:00 — 18:00
+            </div>
+          </div>
+
+          <div style="height: 12px"></div>
+
+          <div class="card">
+            <h3 style="margin-top: 0">报价/咨询</h3>
+            <p style="font-size: 14px; color: #444">
+              可直接拨打电话询价，或添加微信沟通细节。
+            </p>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div
+          style="
+            max-width: var(--maxw);
+            margin: 0 auto;
+            padding: 8px;
+            color: #777;
+          "
+        >
+          © 李城泉 · 石材雕塑与园林景观 · 电话：13931692826
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
